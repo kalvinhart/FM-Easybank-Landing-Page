@@ -1,0 +1,58 @@
+.main {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 10rem 0;
+
+    background-color: var(--light-grayish-blue);
+
+    text-align: center;
+
+    &__content {
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: $bp-large) {
+            font-size: 4.2rem;       
+        }
+    }
+
+    &__grid {
+
+        & > * {
+            margin-bottom: 4rem;
+        }
+
+        &-item {
+
+            & > * {
+                margin-bottom: 1.5rem;
+            }
+
+            &-icon {
+                margin-bottom: 3rem;
+            }
+        }
+
+        @media only screen and (min-width: $bp-small) {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, min-content);
+            grid-gap: 3rem;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: min-content;
+        }
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        text-align: left;
+    }
+}

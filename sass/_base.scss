@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+// Breakpoints
+
+$bp-small: 600px;
+$bp-med: 900px;
+$bp-large: 1200px;
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Public Sans, sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+
+    @media only screen and (min-width: $bp-med) {
+        font-size: 1.8rem;
+    }
+}
+
+.invite-btn {
+    padding: 1rem 2.5rem;
+
+    border: none;
+    border-radius: 100px;
+
+    background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+
+    cursor: pointer;
+
+    font: inherit;
+    color: white;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 125rem;
+
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.text {
+    max-width: 38rem;
+    margin: 0 auto;
+
+    line-height: 1.5;
+    color: var(--grayish-blue);
+
+    @media only screen and (min-width: $bp-large) {
+        margin: 0;
+        text-align: left;
+    }
+}
