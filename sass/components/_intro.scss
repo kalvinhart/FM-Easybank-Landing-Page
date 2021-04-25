@@ -64,7 +64,7 @@
         display: flex;
         justify-content: center;
 
-        background-image: url("../../images/bg-intro-mobile.svg");
+        background-image: url("/images/bg-intro-mobile.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -88,7 +88,7 @@
     @media only screen and (min-width: $bp-large) {
 
         &::after {
-            content: url("../../images/bg-intro-desktop.svg");
+            content: url("/images/bg-intro-desktop.svg");
             width: 63rem;
             height: 50rem;
             position: absolute;
@@ -98,7 +98,7 @@
         }
 
         &::before {
-            content: url("../../images/image-mockups.png");
+            content: url("/images/image-mockups.png");
             width: 77rem;
             height: 94rem;
             position: absolute;
