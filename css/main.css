@@ -423,7 +423,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("images/bg-intro-mobile.svg");
+  background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -451,7 +451,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .intro::after {
-    content: url("images/bg-intro-desktop.svg");
+    content: url("../images/bg-intro-desktop.svg");
     width: 63rem;
     height: 50rem;
     position: absolute;
@@ -460,7 +460,7 @@ body {
     z-index: 0;
   }
   .intro::before {
-    content: url("images/image-mockups.png");
+    content: url("../images/image-mockups.png");
     width: 77rem;
     height: 94rem;
     position: absolute;
@@ -619,19 +619,19 @@ body {
 }
 
 .img-currency {
-  background-image: url("images/image-currency.jpg");
+  background-image: url("../images/image-currency.jpg");
 }
 
 .img-restaurant {
-  background-image: url("images/image-restaurant.jpg");
+  background-image: url("../images/image-restaurant.jpg");
 }
 
 .img-plane {
-  background-image: url("images/image-plane.jpg");
+  background-image: url("../images/image-plane.jpg");
 }
 
 .img-confetti {
-  background-image: url("images/image-confetti.jpg");
+  background-image: url("../images/image-confetti.jpg");
 }
 
 .footer {
